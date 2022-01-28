@@ -1,0 +1,65 @@
+.about-us-description {
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 30px 0;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+  }
+
+  &__title {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 30px;
+    margin-bottom: 0;
+    color: #bf0001;
+  }
+
+  &__description {
+    margin-top: 30px;
+    font-family: 'Libre Franklin', sans-serif;
+  }
+
+  &__hansen {
+    margin-top: 30px;
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: center;
+
+    @include media-breakpoint-down (sm) {
+      display: none;
+    }
+  }
+
+  &__hba {
+    margin: 20px;
+  }
+
+  &__hbak {
+    img {
+      width: 186px;
+      height: 125px;
+    }
+
+    margin: 20px;
+  }
+
+  &__bia {
+    img {
+      display: flex;
+      justify-content: center;
+      width: 186px;
+      height: 125px;
+    }
+
+    margin: 20px;
+  }
+}

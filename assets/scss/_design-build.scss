@@ -1,0 +1,87 @@
+.design-build {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  &__title {
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 50px;
+    text-transform: capitalize;
+    color: #bf0001;
+  }
+
+  &__subtitle {
+    //margin-top: 30px;
+    //font-size: 18px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-style: italic;
+    max-width: 700px;
+    margin: 2em auto;
+    font-size: 19px;
+  }
+}
+
+.design-build-description {
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  &__text {
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+  }
+
+  &__paragraph {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 16px;
+    //text-align: center;
+    //margin: 30px auto;
+    //max-width: 1000px;
+  }
+
+  &__list-container {
+    font-family: 'Libre Franklin', sans-serif;
+    margin-top: 75px;
+  }
+
+  &__list-title {
+    font-family: 'Libre Baskerville', serif;
+    color: #bf0001;
+    font-size: 30px;
+  }
+
+  &__list-items {
+    li {
+      margin: 10px;
+    }
+
+    font-size: 18px;
+  }
+
+  &__image {
+    img {
+      width: 100%;
+      height: auto;
+
+      @include media-breakpoint-up(md) {
+        width: 500px;
+        height: 600px;
+      }
+    }
+
+    margin: 50px 0;
+    //overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}

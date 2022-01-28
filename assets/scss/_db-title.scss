@@ -1,0 +1,33 @@
+.db-header {
+  &__container {
+    display: flex;
+    justify-content: center;
+    margin: 3%;
+    box-shadow: 0 1px 5px #000;
+  }
+
+  &__image {
+    width: 100%;
+    background-image: url("http://training.npr.org/wp-content/uploads/2016/06/dreamstime_l_260891731.jpg");
+    //background-color: #bf0001;
+    background-size: cover;
+    height: 150px;
+  }
+
+  &__title {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 50px;
+    max-width: 1000px;
+    margin-left: 50px;
+    color: white;
+    text-shadow: 3px 1px 2px black;
+  }
+
+  &__description {
+    font-family: 'Libre Franklin', sans-serif;
+    max-width: 1000px;
+    margin-left: 25px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+  }
+}

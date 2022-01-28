@@ -1,0 +1,68 @@
+.four-up-grid {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    //margin-bottom: 20px;
+
+    @include media-breakpoint-up(md) {
+      flex-direction: row;
+    }
+
+    @include media-breakpoint-between(md, lg) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__service {
+    padding: 5px;
+    transition: transform 0.4s;
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    @include media-breakpoint-up(sm) {
+      margin: 0 20px;
+      width: 370px;
+    }
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+
+    //comment!
+  }
+
+  &__design-build-icon {
+    margin-bottom: 10px;
+  }
+
+  &__who-we-are-icon {
+    margin-bottom: 10px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    font-family: "Libre Baskerville", serif;
+  }
+
+  &__description {
+    margin-top: 10px;
+    text-align: center;
+    font-family: "Libre Franklin", sans-serif;
+  }
+}
+
+a {
+  color: black;
+  &:hover {
+    color: black;
+  }
+}

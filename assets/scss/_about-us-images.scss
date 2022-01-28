@@ -1,0 +1,62 @@
+.about-us-images {
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    align-items: center;
+  }
+
+  &__item {
+    @include media-breakpoint-up(xl) {
+      max-width: 28%;
+    }
+  }
+
+  &__item-left {
+    display: none;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+
+    /* @media (min-width: 1090px) {
+      display: block;
+    } */
+  }
+
+  &__ron {
+    width: 100%;
+    //height: auto;
+    max-width: 500px;
+    max-height: 350px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px #000;
+
+    @include media-breakpoint-between(md, lg) {
+      max-width: 50%;
+    }
+  }
+
+  &__item-right {
+    display: none;
+    width: 100%;
+    height: auto;
+    //max-width: 350px;
+    //max-height: 350px;
+    overflow: hidden;
+
+    /* @media (min-width: 1090px) {
+      display: block;
+    } */
+  }
+
+  &__hansen {
+    max-width: 250px;
+    box-shadow: 0 1px 4px #000;
+  }
+}
