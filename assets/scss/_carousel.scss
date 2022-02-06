@@ -87,6 +87,15 @@
   }
 }
 
+.carousel-item.carousel__image img {
+  height: 600px;
+  width: 2000px;
+  object-fit: cover;
+  &.w-100 {
+    width: 2000px !important;
+  }
+}
+
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,

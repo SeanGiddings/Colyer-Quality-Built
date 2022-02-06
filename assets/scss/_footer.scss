@@ -1,3 +1,27 @@
+#footer {
+  .footer__container {
+    @include media-breakpoint-up(lg) {
+      justify-content: flex-start;
+    }
+  }
+  .wp-block-gallery {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .wp-block-image img {
+      //max-height: 65px;
+      padding: 10px;
+    }
+  }
+  .wp-block-gallery.has-nested-images.is-cropped
+    figure.wp-block-image:not(#individual-image) {
+    width: 30%;
+    margin: 0;
+  }
+}
+
 .footer {
   &__container {
     box-shadow: 0 -1px 5px #000;
@@ -25,11 +49,11 @@
   &__contact-title {
     text-align: center;
     font-weight: bold;
-    font-family: 'Libre Baskerville', serif;
+    font-family: "Libre Baskerville", serif;
   }
 
   &__contact {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "Libre Franklin", sans-serif;
     font-size: 12px;
   }
 
@@ -67,7 +91,7 @@
   }
 
   &__sean-giddings {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "Libre Franklin", sans-serif;
     font-size: 12px;
     color: grey;
     display: flex;

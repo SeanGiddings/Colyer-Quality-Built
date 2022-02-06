@@ -8,6 +8,12 @@
     // margin-top: 30px;
     margin: 30px auto 75px;
     max-width: 1500px;
+    .slide {
+      height: 140px;
+      @include media-breakpoint-up(lg) {
+        height: 100px;
+      }
+    }
   }
 
   &__title {
