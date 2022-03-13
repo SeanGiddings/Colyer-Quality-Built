@@ -9,7 +9,7 @@
     margin: 30px auto 75px;
     max-width: 1500px;
     .slide {
-      height: 140px;
+      height: fit-content;
       @include media-breakpoint-up(lg) {
         height: 100px;
       }

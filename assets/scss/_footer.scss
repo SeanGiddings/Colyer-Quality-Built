@@ -1,18 +1,42 @@
 #footer {
+  position: relative;
+  justify-content: space-around;
+  box-shadow: 0 -1px 5px #000;
+  background-color: #d1d1cf !important;
+
   .footer__container {
-    @include media-breakpoint-up(lg) {
-      justify-content: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    width: 100%;
+    max-width: 1140px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 3fr;
+    @include media-breakpoint-down(sm) {
+      display: flex;
+      flex-direction: column;
     }
   }
   .wp-block-gallery {
-    width: 40%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    width: 100%;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 75%;
+    }
     align-items: center;
+    justify-items: center;
     .wp-block-image img {
       //max-height: 65px;
       padding: 10px;
+    }
+    img {
+      @include media-breakpoint-up(lg) {
+        width: 175px !important;
+      }
     }
   }
   .wp-block-gallery.has-nested-images.is-cropped
@@ -24,12 +48,6 @@
 
 .footer {
   &__container {
-    box-shadow: 0 -1px 5px #000;
-    background-color: #d1d1cf;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
     @include media-breakpoint-up(lg) {
       flex-direction: row;
       justify-content: space-around;
@@ -40,10 +58,6 @@
     margin: 15px;
     text-align: center;
     width: 250px;
-
-    @include media-breakpoint-up(lg) {
-      margin-left: 200px;
-    }
   }
 
   &__contact-title {

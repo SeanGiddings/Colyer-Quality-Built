@@ -64,7 +64,7 @@ function colyer_wp_customize( $wp_customize ) {
 			'label'    => __( 'Navbar Scheme', 'colyer-wp' ),
 			'section'  => 'theme_header_section',
 			'choices'  => array(
-				'navbar-light bg-light'  => __( 'Default', 'colyer-wp' ),
+				'navbar-light'  => __( 'Default', 'colyer-wp' ),
 				'navbar-dark bg-dark'    => __( 'Dark', 'colyer-wp' ),
 				'navbar-dark bg-primary' => __( 'Primary', 'colyer-wp' ),
 			),

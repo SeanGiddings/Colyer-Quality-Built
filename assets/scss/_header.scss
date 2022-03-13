@@ -5,8 +5,35 @@
 .banner .nav a {
   @extend .nav-link;
 }
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
 
-.header {
+#header {
+  position: relative;
+  box-shadow: 0 1px 5px #000;
+  z-index: 1;
+  background: #d1d1cf !important;
+
+  #navbar {
+    text-align: right;
+    @include media-breakpoint-up(md) {
+      flex: inherit;
+    }
+  }
+
+  .navbar-brand img {
+    height: 70px;
+
+    @include media-breakpoint-up(xl) {
+      height: 100px;
+    }
+  }
+
   &__container {
     display: flex;
     justify-content: space-around;

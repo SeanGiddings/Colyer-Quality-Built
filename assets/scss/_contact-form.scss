@@ -1,3 +1,36 @@
+#wpforms-129 {
+  background-image: url("/wp-content/themes/colyer-wp/assets/images/house-interiors/contact-background.jpg");
+  background-size: cover;
+  height: 800px;
+  width: 100vw;
+  position: relative;
+  left: calc(-50vw + 50%);
+  @include media-breakpoint-up(lg) {
+    margin-bottom: -25px;
+  }
+}
+
+.wpforms-form {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background: rgb(68 45 27 / 70%);
+  border-radius: 25px;
+  box-shadow: 0 0 10px #000;
+  color: #fff;
+  padding: 12px;
+  width: 100%;
+  @include media-breakpoint-up(lg) {
+    width: 380px;
+  }
+  margin: auto;
+  position: absolute;
+  top: 50%; /* position the top  edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+
+  transform: translate(-50%, -50%);
+}
+
 .contact-form {
   &__container {
     display: flex;

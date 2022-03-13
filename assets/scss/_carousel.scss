@@ -1,4 +1,7 @@
 #homepageCarousel {
+  width: 100vw;
+  position: relative;
+  left: calc(-50vw + 50%);
   .carousel {
     &__inner {
       display: flex;
@@ -6,6 +9,7 @@
       justify-content: center;
       margin-left: -15px;
       margin-right: -15px;
+      overflow: visible;
     }
 
     &__section {
@@ -79,13 +83,13 @@
   }
 }
 
-#homepageCarousel {
-  .carousel-item {
-    @include media-breakpoint-down(md) {
-      display: none;
-    }
-  }
-}
+// #homepageCarousel {
+//   .carousel-item {
+//     @include media-breakpoint-down(md) {
+//       display: none;
+//     }
+//   }
+// }
 
 .carousel-item.carousel__image img {
   height: 600px;

@@ -115,6 +115,8 @@ $link-decoration: none;
 @import "../assets/scss/four-up-grid";
 @import "../assets/scss/footer";
 @import "../assets/scss/header";
+@import "../assets/scss/next-gen";
+@import "../assets/scss/page-title";
 @import "../assets/scss/testimonials";
 
 /**
@@ -123,6 +125,23 @@ $link-decoration: none;
 
 img {
   vertical-align: middle;
+}
+
+#wrapper {
+  @include media-breakpoint-down(sm) {
+    //margin-right: -10px;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+
+main {
+  margin-top: 95px;
+  @include media-breakpoint-up(md) {
+    margin-top: 125px;
+  }
 }
 
 /**

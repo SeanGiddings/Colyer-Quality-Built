@@ -1,9 +1,9 @@
 <div id="homepageCarousel" class="carousel__container carousel slide" data-ride="carousel">
   <div class="carousel__inner">
 	<div class="carousel__section">
-	  <div class="carousel__slogan">
+	  <h1 class="carousel__slogan">
 		Colyer Construction and Remodeling
-	  </div>
+		</h1>
 	  <div class="carousel__slogan-byline">
 		A Louisville Standard since 1995
 	  </div>
