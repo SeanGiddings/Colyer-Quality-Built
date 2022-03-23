@@ -1,7 +1,7 @@
 <div class="four-up-grid__container">
 
 	<div class="four-up-grid__service">
-	  <a href="/services">
+	  <a href="/remodeling">
 		<div class="four-up-grid__image">
 		  <img src="<?php block_field( 'remodeling' ); ?>" width="150" height="150" alt="Remodeling">
 		</div>
@@ -15,7 +15,7 @@
 	</div>
 
 	<div class="four-up-grid__service">
-	  <a href="/services">
+	  <a href="/new-build">
 		<div class="four-up-grid__image">
 		  <img src="<?php block_field( 'new-build' ); ?>" width="150" height="150" alt="New Home Construction">
 		</div>
