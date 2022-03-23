@@ -19,6 +19,10 @@ header {
   z-index: 1;
   background: #d1d1cf !important;
 
+  .search-form {
+    display: none;
+  }
+
   #navbar {
     text-align: right;
     @include media-breakpoint-up(md) {
