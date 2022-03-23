@@ -3,7 +3,7 @@
 	<div class="four-up-grid__service">
 	  <a href="/services">
 		<div class="four-up-grid__image">
-		  <img src="/wp-content/themes/colyer-wp/assets/images/icons/remodeling-icon.png" width="150" height="150" alt="Remodeling">
+		  <img src="<?php block_field( 'remodeling' ); ?>" width="150" height="150" alt="Remodeling">
 		</div>
 		<div class="four-up-grid__header">
 		  Remodeling
@@ -17,7 +17,7 @@
 	<div class="four-up-grid__service">
 	  <a href="/services">
 		<div class="four-up-grid__image">
-		  <img src="/wp-content/themes/colyer-wp/assets/images/icons/new-home-icon.png" width="150" height="150" alt="New Home Construction">
+		  <img src="<?php block_field( 'new-build' ); ?>" width="150" height="150" alt="New Home Construction">
 		</div>
 		<div class="four-up-grid__header">
 		  New Home Construction
@@ -32,7 +32,7 @@
 	  <a href="/portfolio">
 		<div class="four-up-grid__image">
 		  <div class="four-up-grid__design-build-icon">
-			<img src="/wp-content/themes/colyer-wp/assets/images/icons/design-build-icon.png" width="140" height="140" alt="Design Build Services">
+			<img src="<?php block_field( 'portfolio' ); ?>" width="140" height="140" alt="Design Build Services">
 		  </div>
 		</div>
 		<div class="four-up-grid__header">
@@ -48,7 +48,7 @@
 	  <a href="/about-us">
 		<div class="four-up-grid__image">
 		  <div class="four-up-grid__who-we-are-icon">
-			<img src="/wp-content/themes/colyer-wp/assets/images/icons/about-us-icon.png" width="140" height="140" alt="Who We Are">
+			<img src="<?php block_field( 'about-us' ); ?>" width="140" height="140" alt="Who We Are">
 		  </div>
 		</div>
 		<div class="four-up-grid__header">
