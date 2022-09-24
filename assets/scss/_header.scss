@@ -1,97 +1,116 @@
 .banner .nav li {
-  @extend .nav-item;
+	@extend .nav-item;
 }
 
 .banner .nav a {
-  @extend .nav-link;
+	@extend .nav-link;
 }
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
 }
 
 #header {
-  position: relative;
-  box-shadow: 0 1px 5px #000;
-  z-index: 1;
-  background: #d1d1cf !important;
+	position: relative;
+	box-shadow: 0 1px 5px #000;
+	z-index: 1;
+	background: #d1d1cf !important;
 
-  .search-form {
-    display: none;
-  }
+	.search-form {
+		display: none;
+	}
 
-  #navbar {
-    text-align: right;
-    @include media-breakpoint-up(md) {
-      flex: inherit;
-    }
-  }
+	#navbar {
+		text-align: right;
+		@include media-breakpoint-up(md) {
+			flex: inherit;
+		}
+		.dropdown-menu {
+			background-color: #d1d1cf;
+			border: none;
+			color: #5e5e5d;
+			text-align: right;
+			padding: 0 0 0.5rem 0;
+			@include media-breakpoint-up(md) {
+				box-shadow: 7px 7px 10px #9c9c9c;
+				text-align: left;
+				padding: 0.5rem 0;
+			}
+			.dropdown-item {
+				color: #5e5e5d;
+				padding: 0.25rem;
+				@include media-breakpoint-up(md) {
+					padding: 0.25rem 1rem;
+				}
+			}
+		}
+	}
 
-  .navbar-brand img {
-    height: 70px;
+	.navbar-brand img {
+		height: 70px;
 
-    @include media-breakpoint-up(xl) {
-      height: 100px;
-    }
-  }
+		@include media-breakpoint-up(xl) {
+			height: 100px;
+		}
+	}
 
-  &__container {
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-    z-index: 999;
-    box-shadow: 0 1px 5px #000;
-    padding: 0;
-    background-color: #d1d1cf;
-  }
+	&__container {
+		display: flex;
+		justify-content: space-around;
+		align-content: center;
+		z-index: 999;
+		box-shadow: 0 1px 5px #000;
+		padding: 0;
+		background-color: #d1d1cf;
+	}
 
-  &__navbar {
-    width: 100%;
-  }
+	&__navbar {
+		width: 100%;
+	}
 
-  &__brand {
-    display: flex;
-    align-items: center;
-    font-family: "Libre Baskerville", serif;
-    text-shadow: 1px 1px 2px white;
-  }
+	&__brand {
+		display: flex;
+		align-items: center;
+		font-family: "Libre Baskerville", serif;
+		text-shadow: 1px 1px 2px white;
+	}
 
-  &__title {
-    display: none;
+	&__title {
+		display: none;
 
-    @include media-breakpoint-up(md) {
-      display: flex;
-    }
-  }
+		@include media-breakpoint-up(md) {
+			display: flex;
+		}
+	}
 
-  &__logo {
-    max-width: 200px;
-    margin: 10px;
+	&__logo {
+		max-width: 200px;
+		margin: 10px;
 
-    @include media-breakpoint-up(md) {
-      max-width: 200px;
-    }
+		@include media-breakpoint-up(md) {
+			max-width: 200px;
+		}
 
-    @include media-breakpoint-down(sm) {
-      max-width: 133px;
-    }
-  }
+		@include media-breakpoint-down(sm) {
+			max-width: 133px;
+		}
+	}
 
-  &__nav-primary {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-  }
+	&__nav-primary {
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+	}
 }
 
 .nav-link {
-  font-family: "Libre Franklin", sans-serif;
+	font-family: "Libre Franklin", sans-serif;
 }
 
 .nav-item {
-  padding-right: 15px;
-  font-size: 18px;
+	padding-right: 15px;
+	font-size: 18px;
 }
