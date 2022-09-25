@@ -1,61 +1,61 @@
 <div class="four-up-grid__container">
 
 	<div class="four-up-grid__service">
-	  <a href="/remodeling">
+	  <a href="<?php block_field( 'url-one' ); ?>">
 		<div class="four-up-grid__image">
-		  <img src="<?php block_field( 'remodeling' ); ?>" width="150" height="150" alt="Remodeling">
+		  <img src="<?php block_field( 'icon-one' ); ?>" width="150" height="150" alt="Remodeling">
 		</div>
 		<div class="four-up-grid__header">
-		  Remodeling
+			<?php block_field( 'title-one' ); ?>
 		</div>
 		<p class="four-up-grid__description">
-		  Interested in adding to your existing dream home? Our team has done over 100 remodels in the last decade alone. Our work speaks for itself. Take a look through our Services page to see some examples of beautiful addons.
+			<?php block_field( 'description-one' ); ?>
 		</p>
 	  </a>
 	</div>
 
 	<div class="four-up-grid__service">
-	  <a href="/new-build">
+	  <a href="<?php block_field( 'url-two' ); ?>">
 		<div class="four-up-grid__image">
-		  <img src="<?php block_field( 'new-build' ); ?>" width="150" height="150" alt="New Home Construction">
+		  <img src="<?php block_field( 'icon-two' ); ?>" width="150" height="150" alt="New Home Construction">
 		</div>
 		<div class="four-up-grid__header">
-		  New Home Construction
+			<?php block_field( 'title-two' ); ?>
 		</div>
 		<p class="four-up-grid__description">
-		  Since 1995, Colyer Construction has been the gold standard of new home construction. With clarity and expertise, our team talks through ever aspect and builds your dream home, exactly how you imagined it.
+			<?php block_field( 'description-two' ); ?>
 		</p>
 	  </a>
 	</div>
 
 	<div class="four-up-grid__service">
-	  <a href="/portfolio">
+	  <a href="<?php block_field( 'url-three' ); ?>">
 		<div class="four-up-grid__image">
 		  <div class="four-up-grid__design-build-icon">
-			<img src="<?php block_field( 'portfolio' ); ?>" width="140" height="140" alt="Design Build Services">
+			<img src="<?php block_field( 'icon-three' ); ?>" width="140" height="140" alt="Design Build Services">
 		  </div>
 		</div>
 		<div class="four-up-grid__header">
-		  Our Past Work
+			<?php block_field( 'title-three' ); ?>
 		</div>
 		<p class="four-up-grid__description">
-		  Having a hard time imagining your perfect home? Colyer Construction utilizes cutting edge technology to help you see visually how your home will turn out--before the first brick is layed.
+			<?php block_field( 'description-three' ); ?>
 		</p>
 	  </a>
 	</div>
 
 	<div class="four-up-grid__service">
-	  <a href="/about-us">
+	  <a href="<?php block_field( 'url-four' ); ?>">
 		<div class="four-up-grid__image">
 		  <div class="four-up-grid__who-we-are-icon">
-			<img src="<?php block_field( 'about-us' ); ?>" width="140" height="140" alt="Who We Are">
+			<img src="<?php block_field( 'icon-four' ); ?>" width="140" height="140" alt="Who We Are">
 		  </div>
 		</div>
 		<div class="four-up-grid__header">
-		  Who We Are
+			<?php block_field( 'title-four' ); ?>
 		</div>
 		<p class="four-up-grid__description">
-		  Ron Colyer has been succesfully building homes for the past two decades. With expertise, and a personal touch, he will focus on creating the most quality end result--no shortcuts.
+			<?php block_field( 'description-four' ); ?>
 		</p>
 	  </a>
 	</div>
